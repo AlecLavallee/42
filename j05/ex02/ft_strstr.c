@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <string.h>
 #include <unistd.h>
 
 void	ft_putchar(char c)
@@ -39,12 +41,13 @@ char	*ft_strstr(char *str, char *to_find)
 		}
 		i++;
 	}
-	return (0);
+	return (NULL);
 }
 
 int	main(void)
 {
 	char str1[52] = "je suis le probleme";
-	char str2[10] = "";
-	ft_putstr(ft_strstr(str1, str2));
+	char str2[10] = "success";
+	printf("ft_strstr : %s \n", ft_strstr(str1, str2));
+	printf("strstr : %s \n", strstr(str1, str2));
 }
