@@ -35,5 +35,5 @@ int	ft_fibonacci(int index)
 
 int main(void)
 {
-	ft_putnbr(ft_fibonacci(-4));
+	ft_putnbr(ft_fibonacci(4));
 }

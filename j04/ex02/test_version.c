@@ -38,5 +38,5 @@ int	ft_iterative_power(int nb, int power)
 
 int	main(void)
 {
-	ft_putnbr(ft_iterative_power(10, 12));
+	ft_putnbr(ft_iterative_power(10, 3));
 }

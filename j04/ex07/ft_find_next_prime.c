@@ -39,9 +39,7 @@ int	ft_is_prime(int nb)
 		while (res < nb)
 		{
 			if ((nb % res) != 0)
-			{
 				res++;
-			}
 			else
 				return (0);
 		}
@@ -56,17 +54,13 @@ int	ft_find_next_prime(int nb)
 		return (2);
 	if (nb > 2)
 	{
-		if (ft_is_prime(nb) == 1)
-			return (nb);
 		while (ft_is_prime(nb) != 1)
-		{
 			nb++;
-		}
 		return (nb);
 	}
 }
 
 int	main(void)
 {
-	ft_putnbr(ft_find_next_prime(9));
+	ft_putnbr(ft_find_next_prime(14));
 }

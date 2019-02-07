@@ -23,32 +23,29 @@ void	ft_putnbr(int nb)
 
 int	ft_is_prime(int nb)
 {
-	int res;
+	int res = 3;
 
-	res = 3;
-	if (nb == 0 || nb == 1)
-		return (0);
-	if ((nb % 2) == 0)
-		return (0);
-	if (nb > 2)
-	{
-		if (res == nb)
-			return (1);
-		while (res < nb)
-		{
-			if ((nb % res) != 0)
-			{
-				res++;
-			}
-			else
-				return (0);
-		}
-		if (res == nb)
-			return (1);
-	}
+        if (nb == 0 || nb == 1)
+                return (0);
+        if (nb == 2)
+                return (1);
+        if ((nb % 2) == 0)
+                return (0);
+        if (nb > 2)
+        {
+                while (res < nb)
+                {
+                        if ((nb % res) != 0)
+                                res++;
+                        else
+                                return (0);
+                }
+                if (res == nb)
+                        return (1);
+        }
 }
 
 int	main(void)
 {
-	ft_putnbr(ft_is_prime(1215));
+	ft_putnbr(ft_is_prime(2));
 }

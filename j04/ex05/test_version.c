@@ -26,7 +26,7 @@ void	ft_putnbr(int nb)
 	}
 }
 
-int	ft_sqrt(int nb)
+int	ft_sqrt(unsigned int nb)
 {
 	int res;
 
@@ -47,5 +47,5 @@ int	ft_sqrt(int nb)
 
 int	main(void)
 {
-	ft_putnbr(ft_sqrt(35));
+	ft_putnbr(ft_sqrt(36));
 }
