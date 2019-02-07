@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int	ft_str_is_alpha(char *str)
 {
 	int i;
@@ -18,10 +16,4 @@ int	ft_str_is_alpha(char *str)
 		else return (0);
 	}
 	return (1);
-}
-
-int	main(void)
-{
-	char	str1[20] = "";
-	printf("%d", ft_str_is_alpha(str1));
 }

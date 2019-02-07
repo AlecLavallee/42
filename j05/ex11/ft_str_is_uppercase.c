@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int	ft_str_is_uppercase(char *str)
 {
 	int i;
@@ -14,10 +12,4 @@ int	ft_str_is_uppercase(char *str)
 		else return (0);
 	}
 	return (1);
-}
-
-int	main(void)
-{
-	char	str[20] = "A ";
-	printf("%d", ft_str_is_uppercase(str));
 }

@@ -1,24 +1,3 @@
-#include <stdio.h>
-#include <string.h>
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
-
-void	ft_putstr(char *str)
-{
-	int i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		ft_putchar(str[i]);
-		i++;
-	}
-}
-
 char	*ft_strstr(char *str, char *to_find)
 {
 	int i;
@@ -34,20 +13,10 @@ char	*ft_strstr(char *str, char *to_find)
 		while (to_find[n] == str[i + n])
 		{
 			if (to_find[n + 1] == '\0')
-			{
 				return (str + i);
-			}
 			n++;
 		}
 		i++;
 	}
 	return (NULL);
-}
-
-int	main(void)
-{
-	char str1[52] = "je suis le probleme";
-	char str2[10] = "success";
-	printf("ft_strstr : %s \n", ft_strstr(str1, str2));
-	printf("strstr : %s \n", strstr(str1, str2));
 }
