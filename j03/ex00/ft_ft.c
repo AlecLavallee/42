@@ -7,7 +7,7 @@ void	ft_putchar(char c)
 
 void	ft_ft(int *nbr)
 {
-	*nbr = 6;
+	*nbr = 42;
 }
 
 int	main(void)
